@@ -1,6 +1,7 @@
-class MyDetails{
 
-    // data members
+class MyDetails {
+
+    // Data members
     private String name;
     private int age;
 
@@ -12,32 +13,31 @@ class MyDetails{
         System.out.println("Default Constructor Called !!");
     }
 
-    // Parameterized Constructor
-    public MyDetails(String name, int age){
-        // using this keyword to get current object deatils and intitializing date memebers.
+    // Parameterized constructor
+    public MyDetails(String name, int age) {
+        // Using this keyword to get current object details and initializing data members
         System.out.println("Parameterized Constructor Called !!");
-        this.name = name;  
+        this.name = name;
         this.age = age;
     }
     
-    // Overloading constructor based on the type of parameters.
-    public MyDetails(int age,String name){
+    // Overloaded constructor based on the order of parameters
+    public MyDetails(int age, String name) {
         System.out.println("Overloaded Constructor Called !!");
         this.name = name;
         this.age = age;
     }
 
-    // Copy Constructor
-    public MyDetails(MyDetails obj){
+    // Copy constructor
+    public MyDetails(MyDetails obj) {
         System.out.println("Copy Constructor Called !!");
-        name = obj.name;
-        age = obj.age;
-
+        this.name = obj.name;
+        this.age = obj.age;
     }
     
-    // member function
-    public void printDetails(){
-        System.out.println(name+" "+age);
+    // Member function to print details
+    public void printDetails() {
+        System.out.println(name + " " + age);
     }
 }
 
@@ -45,23 +45,20 @@ public class OOPsTerminology {
 
     public static void main(String[] args) {
 
-        // creating object for Non-Parameterized Constructor
+        // Creating object using non-parameterized constructor
         MyDetails obj = new MyDetails();
-        obj.printDetails();
+        obj.printDetails(); // Output will be "null 0" as name and age are not initialized
 
-        // creating object for Parameterized Constructor and initializing data members
-        MyDetails obj1 = new MyDetails("kalyan",21);
-        obj1.printDetails();
+        // Creating object using parameterized constructor and initializing data members
+        MyDetails obj1 = new MyDetails("Kalyan", 21);
+        obj1.printDetails(); // Output: Kalyan 21
 
-        // creating object for Parameterized Constructor and overriding based on data types
-        MyDetails obj2 = new MyDetails(21,"venkat");
-        obj2.printDetails();
+        // Creating object using overloaded parameterized constructor
+        MyDetails obj2 = new MyDetails(21, "Venkat");
+        obj2.printDetails(); // Output: Venkat 21
 
-        // creating object for copy constructor
+        // Creating object using copy constructor
         MyDetails obj3 = new MyDetails(obj1);
-        obj3.printDetails();
-
-        
+        obj3.printDetails(); // Output: Kalyan 21
     }
-    
 }
