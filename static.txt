@@ -1,5 +1,0 @@
-Identify the correct restriction on static methods.
-
-They must access only static data
-They can only call other static methods.
-They cannot refer to this or super.
