@@ -5,7 +5,6 @@ Welcome to the Study Notes Repository! This repository contains a collection of 
 ## 📁 Table of Contents
 - [Introduction](#introduction)
 - [Subjects Covered](#subjects-covered)
-- [Usage](#usage)
 - [Contribution](#contribution)
 - [License](#license)
 - [Disclaimer](#disclaimer)
@@ -53,10 +52,13 @@ While the notes are detailed and cover a wide range of topics, **they should not
 ## 🤝 Contribution
 Contributions are welcome! If you have notes or resources to share, please fork the repository and submit a pull request. Ensure your contributions are well-documented and structured similarly to the existing notes.
 
+
 ## 📜 License
 This repository is licensed under the MIT License. For more details, refer to the LICENSE file.
 
+
 ## ⚠️ Disclaimer
 The notes in this repository are intended to supplement your learning process. They should not be treated as complete preparation material. Always refer to official textbooks and other educational resources for comprehensive preparation.
+
 
 ## Happy studying! 😊
