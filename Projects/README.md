@@ -1,4 +1,4 @@
-                                                                                  # 🌟 Projects
+# 🌟 Projects
 
 ## 🚀 Importance of Projects in Cracking Interviews
 Projects play a crucial role in demonstrating your practical skills and problem-solving abilities to potential employers. They showcase your capability to apply theoretical knowledge to real-world scenarios, making you stand out in the competitive job market. Building and presenting projects effectively can significantly enhance your chances of cracking any interview.
@@ -30,7 +30,7 @@ As a full stack developer, I tackle real-world problems and implement web-based 
   - Facilitated seamless management of counseling activities, leading to a 25% increase in student engagement.
 
 ### Online PDF Management Tool 
-![Tailwind CSS](https://img.icons8.com/?size=100&id=x7XMNGh2vdqA&format=png&color=000000) ![Python](https://img.icons8.com/color/48/000000/python.png) ![Django](https://img.icons8.com/color/48/000000/django.png)
+![Tailwind CSS](https://img.icons8.com/?size=48&id=x7XMNGh2vdqA&format=png&color=000000) ![Python](https://img.icons8.com/color/48/000000/python.png) ![Django](https://img.icons8.com/color/48/000000/django.png)
 - **[Online PDF Management Tool](https://pdfsquare959.pythonanywhere.com/)** | **[GitHub](https://github.com/R-Venkat-Kalyan/PDFsquare)**
   - Architected a web application specializing in online PDF tasks, including PDF to Word conversion, vice versa, image to PDF, and additional features.
   - Improved user data security by 50% through the implementation of a no-storage policy.
