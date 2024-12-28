@@ -23,7 +23,7 @@ public class BinarySearch {
             int m = (l + r) / 2;
             if(arr[m] == key)
             return m;
-            if(key < arr[m]){
+            else if(key < arr[m]){
                 r = m - 1;
             }
             else

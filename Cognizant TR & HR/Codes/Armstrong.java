@@ -5,7 +5,7 @@ public class Armstrong {
         System.out.print("Enter a number: ");
         String input = br.readLine();
         int number = Integer.parseInt(input);
-
+        
         // Checking Armstrong using String-based approach
         System.out.println("Using String-Based Approach:");
         if (isArmstrongStringBased(input)) {

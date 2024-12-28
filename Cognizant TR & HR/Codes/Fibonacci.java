@@ -1,5 +1,5 @@
 // The Fibonacci Series is a series where the next term is the sum of the previous two terms.
-// 0 1 1 2 3 5 8 13 21 3
+// 0 1 1 2 3 5 8 13 21 34
 public class Fibonacci {
    
     public static void main(String args[]){
