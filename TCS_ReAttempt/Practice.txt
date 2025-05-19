@@ -240,7 +240,7 @@ static int maxSubarraySum(int[] arr) {
 
 
 							Questions
-							--------------
+							---------
 HR / Behavioral
 ----------------------
 Tell me about yourself and your journey as a Full-Stack Developer.
@@ -348,7 +348,7 @@ On the frontend, I use HTML5, Tailwind CSS, and Bootstrap to build clean and res
 For data storage, I work with both MySQL and MongoDB, depending on the project requirements.
 
 I’ve built several web-based projects aimed at solving real-world problems faced by me or those around me. 
-These include Task Prompter, a tool for sc heduling tasks and sending reminders; a Counseling Management System to support
+These include Task Prompter, a tool for scheduling tasks and sending reminders; a Counseling Management System to support
 student and administrator interactions; and an Online Notes App to make academic materials easily accessible.
 
 I use Git and GitHub to push and manage my code regularly, and I am familiar with basic version control operations. 
@@ -364,7 +364,7 @@ me how collaboration with colleagues plays a key role in delivering effective so
 exposure to real-time development workflows.
 
 Overall, I’m someone who likes building useful things, keeps learning through hands-on practice, and is eager to grow by
-contributing to meaningful work in a collaborative environment like TCS Prime.
+contributing to meaningful work in a collaborative environment.
 
 
 
@@ -380,13 +380,24 @@ TCS usually used to hire for two roles namely known as Ninja & Digital and in th
 which provides the opportuinity for graduates to work on cutting edge technologies.
 
 
-Python vs Java
+Java vs Pthon vs C
 --------------------
-Java uses generational garbage collection via the JVM.
-Python uses reference counting with cyclic garbage collection.
-Java allows more tuning and control over memory (via JVM options).
-Python offers simpler memory handling but less manual control.
-Java is generally better for memory-intensive, large-scale apps.
+Java 
+	compiled programming language 
+	automatic garbage collection 
+	source code compiled to bytecode and run by JVM
+
+Python
+	interpreted language 
+	uses reference counting with cyclic garbage collection
+	source code is interpreted by python interpreter
+
+C
+	procedural language
+	no automatic garbage collection
+	source code is directly compiled to machine code
+	
+
 
 
 OOP Concepts with Project Examples
