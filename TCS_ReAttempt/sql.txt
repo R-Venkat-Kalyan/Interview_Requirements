@@ -1,0 +1,151 @@
+login page, password field to be displayed ###
+sql code to add primary key to a column which has only unique records
+
+
+
+
+
+
+# Most Asked SQL Interview Questions Using LIMIT and OFFSET
+
+Here are some of the most commonly asked SQL interview questions that can be solved using `LIMIT` and `OFFSET`. These are especially useful for pagination and record selection.
+
+---
+
+## 1. Retrieve the Top N Records
+
+**Question:** Get the top 5 highest-paid employees.
+
+```sql
+SELECT * FROM employees
+ORDER BY salary DESC
+LIMIT 5;
+```
+
+---
+
+## 2. Get the N-th Highest Record
+
+**Question:** Find the employee with the second highest salary.
+
+```sql
+SELECT * FROM employees
+ORDER BY salary DESC
+LIMIT 1 OFFSET 1;
+```
+
+*Change OFFSET to 2 for third highest, 3 for fourth, etc.*
+
+---
+
+## 3. Pagination – Display N Records Per Page
+
+**Question:** Display the records for page 2 if 10 records are displayed per page.
+
+```sql
+SELECT * FROM employees
+ORDER BY id
+LIMIT 10 OFFSET 10;
+```
+
+*Formula: OFFSET = (page_number - 1) * records_per_page*
+
+---
+
+## 4. Get the N-th Record in an Ordered Result
+
+**Question:** Find the 10th employee in alphabetical order.
+
+```sql
+SELECT * FROM employees
+ORDER BY name
+LIMIT 1 OFFSET 9;
+```
+
+---
+
+## 5. Skip the First N Records
+
+**Question:** Get all employees after the top 3 earners.
+
+```sql
+SELECT * FROM employees
+ORDER BY salary DESC
+OFFSET 3;
+```
+
+---
+
+## 6. Display the Last N Records Using LIMIT
+
+**Question:** Get the last 5 records from a table.
+
+```sql
+SELECT * FROM employees
+ORDER BY id DESC
+LIMIT 5;
+```
+
+*To keep them in ascending order:*
+
+```sql
+SELECT * FROM (
+  SELECT * FROM employees
+  ORDER BY id DESC
+  LIMIT 5
+) AS temp
+ORDER BY id ASC;
+```
+
+---
+
+## 7. Retrieve a Range of Records
+
+**Question:** Get records from 11th to 20th rows.
+
+```sql
+SELECT * FROM employees
+ORDER BY id
+LIMIT 10 OFFSET 10;
+```
+
+---
+
+## 8. Get Top N Distinct Values
+
+**Question:** Get the top 3 unique departments with the most employees.
+
+```sql
+SELECT department, COUNT(*) as emp_count
+FROM employees
+GROUP BY department
+ORDER BY emp_count DESC
+LIMIT 3;
+```
+
+---
+
+
+
+🔹 int (Primitive Type)
+Type: Primitive data type
+
+Size: 4 bytes (32 bits)
+
+Default value: 0
+
+Stored in: Stack (for local variables)
+
+Usage: Used for fast, low-level operations.
+
+
+🔹 Integer (Wrapper Class)
+Type: Class (part of java.lang)
+
+Object type: Yes
+
+Default value: null (when used in objects or collections)
+
+Stored in: Heap (since it's an object)
+
+Usage: Used when you need an object (e.g., for collections like ArrayList)
