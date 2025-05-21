@@ -125,6 +125,11 @@ LIMIT 3;
 
 ---
 
+copy values
+----------------
+INSERT INTO employees_backup (id, name, salary)
+SELECT id, name, salary FROM employees;
+
 
 
 🔹 int (Primitive Type)
@@ -149,3 +154,35 @@ Default value: null (when used in objects or collections)
 Stored in: Heap (since it's an object)
 
 Usage: Used when you need an object (e.g., for collections like ArrayList)
+
+
+🛠️ Compile Time
+Feature	Description
+When it happens	During code compilation (before execution)
+Main goal	Translate source code into machine code or bytecode
+Errors detected	Syntax errors, type mismatches, missing imports, etc.
+Tools involved	Compiler (javac for Java, etc.)
+Example error	missing ;, cannot find symbol, type mismatch
+Output	Compiled file (e.g., .class file in Java)
+
+📌 Example:
+
+java
+Copy
+Edit
+int x = "hello"; // Compile-time error: incompatible types
+🚀 Run Time
+Feature	Description
+When it happens	While the program is executing
+Main goal	Actually run the logic written in the program
+Errors detected	Division by zero, null pointer exceptions, logic bugs
+Tools involved	Runtime environment (like JVM for Java)
+Example error	NullPointerException, ArithmeticException
+Output	Program output or crash
+
+📌 Example:
+
+java
+Copy
+Edit
+int a = 5 / 0; // Run-time error: Division by zero
