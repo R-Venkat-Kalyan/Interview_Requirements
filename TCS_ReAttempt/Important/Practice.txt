@@ -1,0 +1,255 @@
+							Questions
+							---------
+HR / Behavioral
+----------------------
+Tell me about yourself and your journey as a Full-Stack Developer.
+Why do you want to join TCS Prime?
+What do you know about TCS Prime and its objectives?
+Walk me through a challenge you faced on a team project and how you resolved it.
+Describe a time you had to learn a new technology quickly.
+How do you prioritize tasks when working under tight deadlines?
+What are your greatest strengths and weaknesses?
+Give an example of when you took initiative beyond your assigned role.
+How do you handle feedback and criticism?
+Where do you see yourself in 5 years?
+
+Education & Certifications
+-------------------------------------
+You graduated with a 9.46 CGPA—how did you maintain this performance?
+What core subjects in your B.Tech prepared you for software development?
+Tell us about your AWS Certified Cloud Practitioner certification—what did you learn?
+How has your HackerRank 3-star Java rating influenced your coding practice?
+
+Experience (GenC Intern at Cognizant)
+------------------------------------------------------
+What is Pega? Explain Pega case management and its use cases.
+How did you expose RESTful web services in your Pega project?
+What were the 4 user stages and 7 processes in your Insurance Claim Management type?
+How did your contribution improve claims-processing efficiency?
+Describe how you collaborated with peers or stakeholders during that internship.
+
+Projects Deep-Dive
+--------------------------
+Task Prompter (Spring Boot, MongoDB, OAuth)
+Architecture: How did you structure the backend and database?
+Explain how you implemented Google and email login using OAuth.
+Describe your REST API endpoints for scheduling, updating, deleting tasks.
+How did you ensure security (validation, authorization, data protection)?
+What was your approach to send email reminders?
+How did you measure “30% improvement in task efficiency”?
+What challenges did you face integrating MongoDB and how did you resolve them?
+
+Counseling Management System (Spring Boot, MySQL)
+Explain your database schema for student-counselor interactions.
+How did you implement session management for concurrent users?
+What Agile practices did you follow?
+How did you track and improve the 25% increase in student engagement?
+Describe a bug or performance issue you fixed in this app.
+
+Online Notes App (React, FlipHTML5)
+How did you integrate FlipHTML5 into a React app?
+Describe your component hierarchy and state management.
+How did you load and render PDFs interactively?
+What optimizations did you make for performance or UX?
+
+Technical / Domain
+---------------------------
+Core Programming (Java, Python, C)
+Compare Java and Python in terms of memory management.
+Explain OOP concepts and give examples in your projects.
+How do you handle exceptions in Java?
+Write (or describe) a function to reverse a linked list.
+Web Development (HTML, Bootstrap, Spring Boot)
+What is the Spring Bean lifecycle?
+Explain dependency injection and inversion of control in Spring.
+How do you make a REST controller in Spring Boot?
+How does Bootstrap’s grid system work?
+
+Databases (MySQL, MongoDB)
+When would you choose MongoDB over MySQL?
+Explain indexing in MongoDB and when to use capped collections.
+How do you design a relational schema for many-to-many relationships?
+Describe ACID properties and how MySQL enforces them.
+
+DevOps & Cloud (Git, Maven, EC2, S3, Docker, Kubernetes)
+Walk through your Git branching and merge strategy.
+How did you containerize an application with Docker?
+Explain how you would deploy your Spring Boot app on EC2 and S3.
+What are Kubernetes pods, deployments, and services?
+
+REST & Web Services
+What is the difference between PUT and PATCH?
+How do you secure REST APIs?
+Explain CORS and how to configure it in Spring Boot.
+
+System Design & High-Level Scenarios
+-----------------------------------------------------
+Design a task-management system for 1M users. Discuss components and flows.
+How would you scale your Notes App to handle large volumes of PDF traffic?
+Outline a microservices architecture for the Counseling System.
+How would you migrate a monolithic Spring Boot app to Kubernetes?
+
+Problem-Solving & Algorithms
+-------------------------------------------
+Describe your approach to solve “two-sum” in an array. 
+How do you optimize a slow SQL query?
+Explain Big O notation for common data structures (ArrayList, HashMap).
+Given a graph, how would you detect a cycle?
+
+ 
+Self Intro
+------------
+My name is Reddy Venkat Kalyan, a Computer Science and Engineering graduate from KL University. 
+I’ve recently completed my final semester examinations and am currently waiting for the results.
+
+I’m a multilingual Full Stack Developer who can work with the Spring Boot framework for backend development. 
+On the frontend, I use HTML5, Tailwind CSS, and Bootstrap to build clean and responsive user interfaces. 
+For data storage, I work with both MySQL and MongoDB, depending on the project requirements.
+
+I’ve built several web-based projects aimed at solving real-world problems faced by me or those around me. 
+These include Task Prompter, a tool for scheduling tasks and sending reminders; a Counseling Management System to support
+student and administrator interactions; and an Online Notes App to make academic materials easily accessible.
+
+I use Git and GitHub to push and manage my code regularly, and I am familiar with basic version control operations. 
+I believe that being able to work across different technologies, even with just foundational knowledge, is essential. 
+I also rely on AI tools like ChatGPT and GitHub Copilot to support my learning and speed up development, as it's not practical for 
+anyone to remember every detail.
+
+During my final semester, I interned at Cognizant Technology Solutions in the Pega domain, 
+where I contributed to the development of an Insurance Claim Management System. 
+This application helped streamline the claims process within a financial platform using Pega's low-code tools.
+The internship gave me an opportunity to understand how large-scale systems function in a corporate setting and showed 
+me how collaboration with colleagues plays a key role in delivering effective solutions. It was a valuable experience that gave me
+exposure to real-time development workflows.
+
+Overall, I’m someone who likes building useful things, keeps learning through hands-on practice, and is eager to grow by
+contributing to meaningful work in a collaborative environment.
+
+
+
+Why Prime
+---------------
+TCS Prime offers an excellent opportunity for engineers to work on cutting-edge projects, emphasizing learning and leadership. 
+It aligns with my drive to grow in a structured yet innovation-driven environment boosting my skills.
+
+What Is Prime
+--------------------
+TCS prime is one of the jo roles offered to candidates based on their score in NQT recruitment test.
+TCS usually used to hire for two roles namely known as Ninja & Digital and in the recent years it included this prime role
+which provides the opportuinity for graduates to work on cutting edge technologies.
+
+
+Java vs Pthon vs C
+--------------------
+Java 
+	compiled programming language 
+	automatic garbage collection 
+	source code compiled to bytecode and run by JVM
+
+Python
+	interpreted language 
+	uses reference counting with cyclic garbage collection
+	source code is interpreted by python interpreter
+
+C
+	procedural language
+	no automatic garbage collection
+	source code is directly compiled to machine code
+	
+
+
+
+OOP Concepts with Project Examples
+----------------------------------
+Encapsulation:
+In my Task Prompter project, each task was represented by a Task class with private fields like title, dueDate, and 
+public getters/setters to access them.
+
+Inheritance:
+In my Spring Boot projects, I created a BaseEntity class with common fields like id, createdAt, which were extended by multiple 
+entity classes like User, Task, etc.
+
+Polymorphism:
+In my Counseling System, I used interfaces like UserService with multiple implementations (for students and admins), allowing
+flexible service logic.
+
+Abstraction:
+In all backend APIs, I exposed only required endpoints to the frontend while hiding the business logic inside service classes.
+
+
+Handling Exceptions in Java
+---------------------------------------
+I use try-catch blocks to handle specific exceptions like NullPointerException, IOException, etc.
+For REST APIs, I implement global exception handling using
+@ControllerAdvice and @ExceptionHandler to return proper HTTP status and messages.
+
+
+When to choose MongoDB over MySQL
+-------------------------------------------------------
+Choose MongoDB when:
+You need to store unstructured or flexible data (e.g., JSON-like documents).
+Schema may evolve frequently (no fixed schema).
+You require faster development with nested or hierarchical data.
+You're building real-time apps like chat systems, content management, or IoT apps.
+
+
+Indexing in MongoDB and Capped Collections
+-----------------------------------------------------------------
+Indexing in MongoDB improves query performance by allowing faster data retrieval.
+The default _id index is created automatically.
+You can add indexes on fields using db.collection.createIndex({ field: 1 }).
+Use indexes on frequently queried or sorted fields to avoid full collection scans.
+
+Capped Collections are fixed-size collections that overwrite oldest documents when full.
+Best used for logging, caching, or sensor data where recent entries matter.
+They preserve insertion order and have fast writes.
+
+
+
+												int vs Integer
+												--------------
+
+int
+---
+Type: Primitive data type
+Size: 4 bytes (32 bits)
+Default value: 0
+Stored in: Stack (for local variables)
+Usage: Used for fast, low-level operations.
+
+
+Integer
+-------
+Type: Wrapper Class (part of java.lang)
+Object type: Yes
+Default value: null (when used in objects or collections)
+Stored in: Heap (since it's an object)
+Usage: Used when you need an object (e.g., for collections like ArrayList)
+
+
+
+										Compile Time vs Run Time
+										------------------------
+Compile Time
+------------
+It happens during the compilation before execution.
+Main goal is to translate source code to byte code.
+Common compilation errors are missing semicolon, invalid data type, missing imports, etc.
+Output Compiled file (e.g., .class file in Java)
+
+
+Run Time
+--------
+It happens While the program is executing
+Main goal is to run the logic written in the program
+Common run time errors are Division by zero, null pointer exceptions, logic bugs
+Output Program output or crash
+
+
+
+
+Git Reset Vs Git Revert
+Git colloboration
+Git configuration
+
+

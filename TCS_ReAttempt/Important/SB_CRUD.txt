@@ -1,0 +1,85 @@
+application.properties
+----------------------
+spring.datasource.url = jdbc:mysql://localhost:3306/sample_users
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.username=root
+spring.datasource.password=root
+spring.jpa.hibernate.ddl-auto=update
+
+
+Details Persisting And Displaying
+---------------------------------
+@PostMapping("/details")
+	public String loginDetails(HttpServletRequest request, Model model) {
+		String email = request.getParameter("email");
+		String password = request.getParameter("password");
+		model.addAttribute("email",email);
+		model.addAttribute("password",password);
+		return "loginDetails";
+	}
+	
+	@PostMapping("/save")
+	public String saveUser(@ModelAttribute UserEntity userEntity, Model model) {
+		model.addAttribute("user", userEntity);
+		userService.saveUserDetails(userEntity);
+		return "registerDetails";
+	}
+
+
+
+🔹 Use id when:
+You want to style or manipulate the element with CSS or JavaScript.
+You want to associate a <label> with the input.
+🔹 Use name when:
+You want the input's value to be sent to the server when the form is submitted.
+
+
+✅ What Does the <span> Tag Do?
+The <span> tag is an inline container used to group text or elements for styling or scripting purpose
+
+
+
+✅ Model (from org.springframework.ui.Model)
+Purpose: Used to pass data from the controller to the view (HTML page).
+
+
+
+✅ @ModelAttribute
+Purpose: Binds form data to a Java object automatically.
+
+
+
+
+Mail Sending
+------------
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=taskprompter@gmail.com
+spring.mail.password=bhds bdgx qrgs ioze
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+
+Main Logic
+----------
+@Autowired
+	private JavaMailSender javaMailSender;
+
+	public void sendEmail(String to, String subject, String text) {
+		SimpleMailMessage message = new SimpleMailMessage();
+		message.setTo(to);
+		message.setSubject(subject);
+		message.setText(text);
+
+		javaMailSender.send(message);
+	}
+
+
+
+
+
+
+Scheduling
+----------
+@EnableScheduling on main class and service class which should also have @component
+@schedule(fixed rate = 300000) on function, time in milliseconds

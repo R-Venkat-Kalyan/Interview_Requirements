@@ -1,0 +1,133 @@
+login page, password field to be displayed ###
+sql code to add primary key to a column which has only unique records
+
+
+
+SQL
+---
+
+## 1. Retrieve the Top N Records
+
+**Question:** Get the top 5 highest-paid employees.
+
+SELECT * FROM employees
+ORDER BY salary DESC
+LIMIT 5;
+
+
+## 2. Get the N-th Highest Record
+
+**Question:** Find the employee with the second highest salary.
+
+
+SELECT * FROM employees
+ORDER BY salary DESC
+LIMIT 1 OFFSET 1;
+
+*Change OFFSET to 2 for third highest, 3 for fourth, etc.*
+
+
+## 3. Pagination – Display N Records Per Page
+
+**Question:** Display the records for page 2 if 10 records are displayed per page.
+
+SELECT * FROM employees
+ORDER BY id
+LIMIT 10 OFFSET 10;
+
+*Formula: OFFSET = (page_number - 1) * records_per_page*
+
+
+## 4. Get the N-th Record in an Ordered Result
+
+**Question:** Find the 10th employee in alphabetical order.
+
+
+SELECT * FROM employees
+ORDER BY name
+LIMIT 1 OFFSET 9;
+
+
+## 5. Skip the First N Records
+
+**Question:** Get all employees after the top 3 earners.
+
+SELECT * FROM employees
+ORDER BY salary DESC
+OFFSET 3;
+
+
+## 6. Display the Last N Records Using LIMIT
+
+**Question:** Get the last 5 records from a table.
+
+
+SELECT * FROM employees
+ORDER BY id DESC
+LIMIT 5;
+
+
+*To keep them in ascending order:*
+
+SELECT * FROM (
+  SELECT * FROM employees
+  ORDER BY id DESC
+  LIMIT 5
+) AS temp
+ORDER BY id ASC;
+
+
+## 7. Retrieve a Range of Records
+
+**Question:** Get records from 11th to 20th rows.
+
+SELECT * FROM employees
+ORDER BY id
+LIMIT 10 OFFSET 10;
+
+
+## 8. Get Top N Distinct Values
+
+**Question:** Get the top 3 unique departments with the most employees.
+
+SELECT department, COUNT(*) as emp_count
+FROM employees
+GROUP BY department
+ORDER BY emp_count DESC
+LIMIT 3;
+
+
+Copy values
+-----------
+INSERT INTO employees_backup (id, name, salary)
+SELECT id, name, salary FROM employees;
+
+Select * into certifications from certified_students;
+
+
+Retrieve Half Records
+---------------------
+select * from emp Limit(select count(*) * 0.5 from emp)
+
+
+Filter records where name start with 'a'
+---------------------------------------
+select * from emp where name like 'a%';
+
+select * from emp where binary name like 'a%';  small a only
+
+
+Name start with a or c
+----------------------
+select * from emp where name like '[a-c]%';
+
+
+Filter record where company contains 'tcs'
+------------------------------------------
+select * from emp where company like '%tcs%';
+
+
+
+Filter Id'betweeen 30 to 100
+----------------------------
+select * from emp where id between 30 and 100;
