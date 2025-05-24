@@ -1,0 +1,27 @@
+Tcs
+----
+46 countries: 150 locations
+6 lakh + employees
+headquartered at mumbai
+market capitilisation is 12+ trillion
+founded in 1968 by tata sons
+chairman: natarajan chandrasekharan
+ceo: k krithisavan
+revenue: 250000+ crores
+
+
+
+projects
+-----------
+bsnl 4g transformation
+skill development with jntu
+cloud computing program at iit bbsr
+
+
+products
+------------
+TCS iON: Cloud-based solutions for education, assessments, and skill development
+TCS CHROMA: A human capital management platform for HR processes.
+TCS OmniStore: A unified commerce platform enhancing customer shopping experiences.
+jile: Agile devops platform for CD
+BANCS: Banking
