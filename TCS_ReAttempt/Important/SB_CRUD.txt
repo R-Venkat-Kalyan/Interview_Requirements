@@ -54,8 +54,8 @@ Mail Sending
 ------------
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
-spring.mail.username=taskprompter@gmail.com
-spring.mail.password=bhds bdgx qrgs ioze
+spring.mail.username=YOUR_MAIL
+spring.mail.password=YOUR_PASSWORD
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
 
