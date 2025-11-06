@@ -25,7 +25,11 @@ public class Question2 {
             ch[i] = '1';
     }
     String ans = new String(ch);
-    System.out.println(Integer.parseInt(ans,2));
+    int dec = Integer.parseInt(ans,2);
+    String hex = Integer.toHexString(dec);
+    String oct = Integer.toOctalString(dec);
+    System.out.println(dec+" "+hex+" "+oct);
+
 }
     
 }
