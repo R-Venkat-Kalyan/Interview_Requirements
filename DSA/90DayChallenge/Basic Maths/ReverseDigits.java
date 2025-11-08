@@ -6,6 +6,7 @@ public class ReverseDigits {
         Scanner input = new Scanner(System.in);
         int number = input.nextInt();
         // System.out.println(reverseDigitsUsingString(number));
+        // System.out.println(reverseSignedInteger(number));  // reverse -ve nums also in signed intger range
         System.out.println(reverseDigitsIteratively(number));
         input.close();
     }
@@ -38,4 +39,22 @@ public class ReverseDigits {
         }
         return revNum;
     }
+
+
+    public static int reverseSignedInteger(int x) {   
+    if(x > Integer.MAX_VALUE || x < Integer.MIN_VALUE) return 0;    
+    boolean isNegative = x < 0;
+    x = Math.abs(x);
+    int rev = 0;
+    while (x != 0) {
+        int ld = x % 10;
+        // Check for overflow/underflow before multiplying by 10 and adding
+        if (rev > Integer.MAX_VALUE/10 || rev < Integer.MIN_VALUE/10) {
+            return 0;
+        }
+        rev = (rev * 10) + ld;
+        x /= 10;
+    }
+    return isNegative ? -rev : rev;
+}
 }
